@@ -57,7 +57,7 @@ namespace TestTask_3
         }
 
         static Regex regs = new Regex
-            (@"^(\d{2}.\d{2}.\d{4}) \d{2}:\d{2}:\d{2}.\d{3}( ){1,2}(INFO|WARN|ERROR|DEBUG|INFORMATION|WARNING)(( ){1,2})");
+            (@"^(\d{2}.\d{2}.\d{4}) \d{2}:\d{2}:\d{2}.\d{3}( ){1,2}(INFO|WARN|ERROR|DEBUG|INFORMATION|WARNING)( (\w|\p{P})* )");
 
         static Regex regs2 = new Regex
             (@"^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}.\d{4}[|] ?(INFO|WARN|ERROR|DEBUG|INFORMATION|WARNING)([|]\w*[|](\w|\p{P})*[|] ?)");
